@@ -1,0 +1,18 @@
+$(function(){
+$('.slider__box').slick({
+prevArrow: '<button type="button" class="slider__arrow slider__arrow-left">Назад</button>',
+nextArrow: '<button type="button" class="slider__arrow slider__arrow-right">Дальше</button>',
+responsive: [
+{
+	breakpoint: 481,
+	settings: {
+		arrows: false
+	}
+}
+]
+});
+
+$('.menu-btn').on('click', function(){
+$('.menu__list').toggleClass('active');	
+})
+});
